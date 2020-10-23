@@ -14,7 +14,10 @@ namespace Mod_Paint
     {
         public Form1()
         {
+            int prueba = 78;
+
             InitializeComponent();
+            Console.Write($"Hola mundo");
         }
     }
 }
