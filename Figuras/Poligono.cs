@@ -5,8 +5,6 @@ namespace Figuras
 {
     public abstract class Poligono
     {
-        protected Point control = new Point(0, 0);
-        public Point Control { get => control; }
         protected GraphicsPath gp;
         protected Color color;
 

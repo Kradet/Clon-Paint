@@ -14,19 +14,16 @@ namespace Mod_Paint
 
     public partial class Form1 : Form
     {
+        List<Poligono> ColeccionPoligono;
+        Poligono poligonoSeleccionado;
 
-
-        List<Triangulo> TriColeccion;
-        List<Rombo> RomColeccion;
-        List<Cuadrado> CuaColeccion;
-        List<Circulo> CirColeccion;
-        Triangulo triSelec, objTri;
-        Rombo romSelec, objRom;
-        Cuadrado cuaSelec, objCua;
-        Circulo cirSelec, objCir;
+        Triangulo objTri;
+        Rombo objRom;
+        Cuadrado objCua;
+        Circulo objCir;
 
         Graphics g;
-        static HerramientaSeleccionada herramienta;
+        HerramientaSeleccionada herramienta;
         Point posicion;
         Point p;
         Point control = new Point(0, 0);
@@ -52,10 +49,7 @@ namespace Mod_Paint
 
         public void ReestablecerValores()
         {
-            triSelec = null;
-            romSelec = null;
-            cuaSelec = null;
-            cirSelec = null;
+            poligonoSeleccionado = null;
 
             objTri = null;
             objRom = null;
@@ -71,15 +65,7 @@ namespace Mod_Paint
         {
             ReestablecerValores();
 
-            TriColeccion = new List<Triangulo>();
-            RomColeccion = new List<Rombo>();
-            CuaColeccion = new List<Cuadrado>();
-            CirColeccion = new List<Circulo>();
-
-            objTri = new Triangulo();
-            objRom = new Rombo();
-            objCua = new Cuadrado();
-            objCir = new Circulo();
+            ColeccionPoligono = new List<Poligono>();
 
             color = Color.Black;
             g = panelDibujo.CreateGraphics();
@@ -133,38 +119,11 @@ namespace Mod_Paint
             {
                 case HerramientaSeleccionada.Puntero:
                     p = panelDibujo.PointToClient(Cursor.Position);
-                    foreach (Triangulo item in TriColeccion)
+                    foreach (Poligono item in ColeccionPoligono)
                     {
                         if (item.Dentro(p))
                         {
-                            triSelec = item;
-                            posicion = p;
-                            break;
-                        }
-                    }
-                    foreach (Rombo item in RomColeccion)
-                    {
-                        if (item.Dentro(p))
-                        {
-                            romSelec = item;
-                            posicion = p;
-                            break;
-                        }
-                    }
-                    foreach (Cuadrado item in CuaColeccion)
-                    {
-                        if (item.Dentro(p))
-                        {
-                            cuaSelec = item;
-                            posicion = p;
-                            break;
-                        }
-                    }
-                    foreach (Circulo item in CirColeccion)
-                    {
-                        if (item.Dentro(p))
-                        {
-                            cirSelec = item;
+                            poligonoSeleccionado = item;
                             posicion = p;
                             break;
                         }
@@ -203,28 +162,9 @@ namespace Mod_Paint
             switch (herramienta)
             {
                 case HerramientaSeleccionada.Puntero:
-
-                    if (triSelec != null)
+                    if (poligonoSeleccionado != null)
                     {
-                        triSelec.Mover(e.Location.X - posicion.X, e.Location.Y - posicion.Y);
-                        panelDibujo.Invalidate(); //Invalidamos para que nos vuelva a enviar el evento draw
-                        posicion = e.Location;
-                    }
-                    else if (cuaSelec != null)
-                    {
-                        cuaSelec.Mover(e.Location.X - posicion.X, e.Location.Y - posicion.Y);
-                        panelDibujo.Invalidate();
-                        posicion = e.Location;
-                    }
-                    else if (romSelec != null)
-                    {
-                        romSelec.Mover(e.Location.X - posicion.X, e.Location.Y - posicion.Y);
-                        panelDibujo.Invalidate();
-                        posicion = e.Location;
-                    }
-                    else if (cirSelec != null)
-                    {
-                        cirSelec.Mover(e.Location.X - posicion.X, e.Location.Y - posicion.Y);
+                        poligonoSeleccionado.Mover(e.Location.X - posicion.X, e.Location.Y - posicion.Y);
                         panelDibujo.Invalidate();
                         posicion = e.Location;
                     }
@@ -280,32 +220,30 @@ namespace Mod_Paint
             switch (herramienta)
             {
                 case HerramientaSeleccionada.Triangulo:
-                    //Error de calculo al tener un triangulo y cualquier figura ya dibujado y dar click sin mover el puntero
-                    //Por resolver; ith, es el punto medio
                     if (objTri.puntoFinal != control)
                     {
-                        TriColeccion.Add(new Triangulo(objTri.puntoInicial, objTri.puntoMedio, objTri.puntoFinal, color));
+                        ColeccionPoligono.Add(new Triangulo(objTri.puntoInicial, objTri.puntoMedio, objTri.puntoFinal, color));
                         panelDibujo.Invalidate();
                     }
                     break;
                 case HerramientaSeleccionada.Rombo:
                     if (objRom.puntoFinal != control)
                     {
-                        RomColeccion.Add(new Rombo(objRom.puntoInicial, objRom.puntoFinal, objRom.punto3, objRom.punto4, color));
+                        ColeccionPoligono.Add(new Rombo(objRom.puntoInicial, objRom.puntoFinal, objRom.punto3, objRom.punto4, color));
                         panelDibujo.Invalidate();
                     }
                     break;
                 case HerramientaSeleccionada.Cuadrado:
                     if (objCua.puntoFinal != control)
                     {
-                        CuaColeccion.Add(new Cuadrado(objCua.puntoInicial, objCua.puntoFinal, color));
+                        ColeccionPoligono.Add(new Cuadrado(objCua.puntoInicial, objCua.puntoFinal, color));
                         panelDibujo.Invalidate();
                     }
                     break;
                 case HerramientaSeleccionada.Circulo:
                     if (objCir.puntoFinal != control)
                     {
-                        CirColeccion.Add(new Circulo(objCir.puntoInicial, objCir.puntoFinal, color));
+                        ColeccionPoligono.Add(new Circulo(objCir.puntoInicial, objCir.puntoFinal, color));
                         panelDibujo.Invalidate();
                     }
                     break;
@@ -319,19 +257,7 @@ namespace Mod_Paint
 
         private void panelDibujo_Paint(object sender, PaintEventArgs e)
         {
-            foreach (Triangulo item in TriColeccion)
-            {
-                item.Dibujar(e.Graphics);
-            }
-            foreach (Rombo item in RomColeccion)
-            {
-                item.Dibujar(e.Graphics);
-            }
-            foreach (Cuadrado item in CuaColeccion)
-            {
-                item.Dibujar(e.Graphics);
-            }
-            foreach (Circulo item in CirColeccion)
+            foreach (Poligono item in ColeccionPoligono)
             {
                 item.Dibujar(e.Graphics);
             }
