@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mod_Paint", "Mod_Paint\Mod_Paint.csproj", "{39390874-9658-40AD-A376-C0CE2019EA1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Mod_Paint\Presentacion.csproj", "{39390874-9658-40AD-A376-C0CE2019EA1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figuras", "Figuras\Figuras.csproj", "{35BE71FF-36DC-4C4F-A80C-61948019E1F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{39390874-9658-40AD-A376-C0CE2019EA1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39390874-9658-40AD-A376-C0CE2019EA1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39390874-9658-40AD-A376-C0CE2019EA1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35BE71FF-36DC-4C4F-A80C-61948019E1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35BE71FF-36DC-4C4F-A80C-61948019E1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35BE71FF-36DC-4C4F-A80C-61948019E1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35BE71FF-36DC-4C4F-A80C-61948019E1F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,34 +1,33 @@
 ﻿using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace Mod_Paint
+namespace Figuras
 {
-    class Cuadrado
+    public class Circulo
     {
         GraphicsPath gp;
-        Color color;
         public Point puntoInicial { get; set; }
         public Point puntoFinal { get; set; }
+        Color color;
 
-        public Cuadrado()
+        public Circulo()
         {
 
         }
 
-        public Cuadrado(Point inicial, Point final, Color color)
+        public Circulo(Point inicial, Point final, Color color)
         {
             gp = new GraphicsPath();
-            Rectangle rectangle = new Rectangle(inicial, new Size(final.X - inicial.X, final.X - inicial.X));
-            gp.AddRectangle(rectangle);
+            gp.AddEllipse(new Rectangle(inicial, new Size(final.X - inicial.X, final.X - inicial.X)));
             gp.CloseFigure();
             this.color = color;
         }
 
-        public void DibujarCuadrado(Graphics g, Color color, Point inicial, Point final)
+        public void DibujarCirculo(Graphics g, Color color, Point inicial, Point final)
         {
             Rectangle r = new Rectangle(inicial, new Size(final.X - inicial.X, final.X - inicial.X));
             g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.DrawRectangle(new Pen(color, 2), r);
+            g.DrawEllipse(new Pen(color,2), r);
             g.Dispose();
         }
 
