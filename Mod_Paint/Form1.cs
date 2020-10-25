@@ -11,6 +11,7 @@ namespace Mod_Paint
         Puntero, Triangulo, Rombo, Cuadrado, Circulo
     }
 
+
     public partial class Form1 : Form
     {
 
@@ -25,7 +26,7 @@ namespace Mod_Paint
         Circulo cirSelec, objCir;
 
         Graphics g;
-        HerramientaSeleccionada herramienta;
+        static HerramientaSeleccionada herramienta;
         Point posicion;
         Point p;
         Point control = new Point(0, 0);

@@ -3,12 +3,10 @@ using System.Drawing.Drawing2D;
 
 namespace Figuras
 {
-    public class Circulo
+    public class Circulo:Poligono
     {
-        GraphicsPath gp;
         public Point puntoInicial { get; set; }
         public Point puntoFinal { get; set; }
-        Color color;
 
         public Circulo()
         {
@@ -29,29 +27,6 @@ namespace Figuras
             g.SmoothingMode = SmoothingMode.AntiAlias;
             g.DrawEllipse(new Pen(color,2), r);
             g.Dispose();
-        }
-
-        public void Dibujar(Graphics g)
-        {
-            g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.DrawPath(new Pen(color, 2), gp);
-        }
-
-        public bool Dentro(Point p)
-        {
-            if (gp.IsOutlineVisible(p, new Pen(color)))
-            {
-                return true;
-            }
-            else
-            {
-                return gp.IsVisible(p);
-            }
-        }
-
-        public void Mover(int x, int y)
-        {
-            gp.Transform(new Matrix(1, 0, 0, 1, x, y));
         }
     }
 }

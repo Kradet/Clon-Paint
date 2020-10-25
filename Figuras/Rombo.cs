@@ -3,14 +3,12 @@ using System.Drawing.Drawing2D;
 
 namespace Figuras
 {
-    public class Rombo
+    public class Rombo:Poligono
     {
-        GraphicsPath gp;
         public Point puntoInicial { get; set; }
         public Point puntoFinal { get; set; }
         public Point punto3 { get; set; }
         public Point punto4 { get; set; }
-        Color color;
 
         public Rombo()
         {
@@ -43,30 +41,6 @@ namespace Figuras
 
             g.Dispose();
             lapiz.Dispose();
-        }
-
-        public void Dibujar(Graphics e)
-        {
-            Pen lapiz = new Pen(color, 2);
-            e.SmoothingMode = SmoothingMode.AntiAlias;
-            e.DrawPath(lapiz, gp);
-        }
-
-        public bool Dentro(Point p)
-        {
-            if(gp.IsOutlineVisible(p, new Pen(color)))
-            {
-                return true;
-            }
-            else
-            {
-                return gp.IsVisible(p);
-            }
-        }
-
-        public void Mover(int x, int y)
-        {
-            gp.Transform(new Matrix(1, 0, 0, 1, x, y));
         }
     }
 }
