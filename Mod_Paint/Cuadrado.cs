@@ -10,10 +10,15 @@ namespace Mod_Paint
         public Point puntoInicial { get; set; }
         public Point puntoFinal { get; set; }
 
+        public Cuadrado()
+        {
+
+        }
+
         public Cuadrado(Point inicial, Point final, Color color)
         {
             gp = new GraphicsPath();
-            Rectangle rectangle = new Rectangle(inicial, new Size(final.X - inicial.X, final.X - inicial.X - final.X));
+            Rectangle rectangle = new Rectangle(inicial, new Size(final.X - inicial.X, final.X - inicial.X));
             gp.AddRectangle(rectangle);
             gp.CloseFigure();
             this.color = color;

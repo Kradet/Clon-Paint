@@ -7,13 +7,18 @@ namespace Mod_Paint
     {
         GraphicsPath gp;
         public Point puntoInicial { get; set; }
-        Point puntoMedio;
+        public Point puntoMedio { get; set; }
         public Point puntoFinal { get; set; }
         Color color;
 
+        public Triangulo()
+        {
+
+        }
 
         public Triangulo(Point inicial, Point medio, Point final, Color color)
         {
+
             gp = new GraphicsPath();
             Point[] vertices = {inicial, medio, final};
             gp.AddPolygon(vertices);
@@ -21,7 +26,7 @@ namespace Mod_Paint
             this.color = color;
         }
 
-        // Dibuja un triangulo y despues lo borra
+        // Dibuja un triangulo y despues lo borra en tiempo real
         public void DibujarTriangulo(Graphics g, Color color, Point inicial, Point final)
         {
             Pen lapiz = new Pen(color, 2);
@@ -59,7 +64,7 @@ namespace Mod_Paint
 
         public void Mover(int x, int y)
         {
-            gp.Transform(new Matrix(1, 0, 0, 0, x, y));
+            gp.Transform(new Matrix(1, 0, 0, 1, x, y));
         }
     }
 

@@ -117,47 +117,83 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="rombo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\rombo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bntColor.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ6SURBVFhH7ddLyExhHMfx45LcL0UWKCEWwoJESUJZkUgk
+        C5cI9abEwlIoGxZSslB2ooRCQlIiSUkhG4WFlGu5Ri7f78z862mcuXLM5v3Vp/ecM+eZ5z/P85xn5s26
+        00J6YCKmYz4WJrzWF/88g7EZl/AOv+r4jvvYjyn4q/hpt+ID8jpr5AeOww/QVg4ifcOvuIwD2IF1WIFV
+        2IR9OIcXSNs5IgPRUhYh3uAbdmMYmklPLMEzxHscRks5j2i81AttZARiNL5gEJrOW9jQ4etIrNgCLpbO
+        OpDHsIDncE7zMhsuwuWYgz5I45qZixnwiTKjYRu5j4xEbg7BAuSCysspxD26gSjC4mIadRbGjj3/CPcM
+        n6zV+CNT4XPszQ/RG9WxgPdwhLrgvYthrsFRHIqN8DU3pijAR3c4XqPmOjsGb9Y2L1QlCjDz4H1rSmfl
+        T3+kfJj1h9v0EEQBGzAeb+Dekhvn6xNs8Ap+mjQW4B7h3yfw3jEwtnHDmoajFRYRBQTbu35qZg/iZt8w
+        jR07j3fg6+ko+RS5jizgDHzdzqOA9RgHF/k91Ew/PIWN7GwyIjEF3uNc3kbkEa6WD7NZqC5gJcwtWGzd
+        rIWNZKeRKMA4Or4+s3SWZVvg+XXcrRy7vUcBTtmDyvFp1I2r3GHyZkdhFMx2+G1nJsCCLDbi4+tCdv4X
+        eIH4JPhVHSzURdow6Sjs9ML/zgC4Yi3gghc6EReMBXzGlQZa+uZrNs55TEM9N1FIesHhz+s0vMRYFJZ4
+        jORxJK6dLJ0VmI4XsAzRmZuPRaRFnUChmYSfiA6r7ULh2Yu8IvxSavnnd7txpaf/lvmzK+9HS3eaSJb9
+        BtsT7x7RQbuHAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="puntero1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\puntero.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <metadata name="colorDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="btnPun.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF7SURBVFhH7da/K0ZRHMfx69cgP7IQJVJE7AaTMjBKWU3K
+        YFL+AhZJKRkNBhZl8gegWGSQQYkkMSiSLOTn++s+3/p2XbennnPOszyfenXPPfcOn9v9cW5USp6pzW2L
+        lnUMx8PiZAtvGP/dK0KkwDc+MCkToaMFxBdmETS2gFpAsNgC72a8iDJ4jy0whBezv4kqeI0tIOnHA3Ru
+        B9XwlmQBSR9uofN7qIeXpBWQdOACeuwYjXCe/wpImnECPX6GVjhNVgFJAw6g51yjC86SVaAHU1iCfCn1
+        vBvIMSdJFqjEBOSe63yaJwyg4NgC7Tg1+2kecY5DbEBuUUGxBe7MWNaFexyhF02ogPPYAmrfjD/RDW9J
+        FpAfFLnSXTO3Bm+xBVahC9AodP4VLfASLbAMu/qV4xJaYh5eIgXm4uGfzEALyNNfA+cZzG3TUodnaIlp
+        BM8KtMAVvLyKWemEvIpaYgzBIz8lWkC+gMEzAlmMtpH1zHiLvJ5t8bCUfBNFPwHSl8k0Cg78AAAAAElF
+        TkSuQmCC
+</value>
   </data>
-  <data name="cuadraro" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\cuadraro.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnRom.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD+SURBVFhH7ZfZCsIwFET7oT6ouK+vfrzbDHYgxlab5OYK
+        4oGhQdqcMS2BNH8KWSHLx9CfI3Jtc+APniwQim9tOJ4jLlAkuVaA4wsyQ6qyR0LhGJm0YxXiPVXokou4
+        xA4xhRP2yUW1EkPkIi6xRYrgBEPlwqxEjlzEJTZIEnwgVy6yS1jIRXIJS7mIS6yRTkbIGfl4YwbhH6OD
+        rhfCj65mAV57X8UU0XIxJ6QUzqH5ODdfyVssSyTLhUWJbLkIv97UEsVykVPCTC5SSpjLxZASsdxiE3vi
+        XYnqctFVwk0uuEOGu1o45jnBBYokltz9gMKl5pK7LHsfXz2a/QJNcwfidrYtBoc9xQAAAABJRU5ErkJg
+        gg==
+</value>
   </data>
-  <data name="rgb" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\rgb.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCua.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACDSURBVFhH7ZYxCoAwEATzCf27H1AUfJKND7BQsI27RbrA
+        nXJi4S5MF4Yh1SVNq6wFA9hADoKuHjTA3AxqkghGYO4AfLyALgi66NyBuVu1ztFVvOYUoAAFKEABClCA
+        Aj4PKCfZCqYg6KLTdZK9eZQyxhzPcn7ZCWqSJ9BFp+ss1/60lC7yfNqRbrEYKAAAAABJRU5ErkJggg==
+</value>
   </data>
-  <data name="mano" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\mano.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnCir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG/SURBVFhH7ZdLK0VhFIZPyWVg5DIxkaJMXEZiYmDED5CE
+        wi/A0KUoAwMiAzJjQMpPUTJgKBRGksvApVyet6z6Ou3b2fs7ncl56qnT2muv/Z29v9ZeO1cmJbXYjv04
+        gF3YhEWlDVfwFH/wN8BLXMVW9EYDbuMXBl00SOVuYR1mohcf0C3+gie4iBP/6rdir+jm3mEPpmIEP9CK
+        3eAYVmEYOqYF3aKd947DWBB96F58F2swKcrdQ3cRie9EI7q3fQbTModW5x7rMZYdtJM2FMiINqPV02aO
+        pAU/UclXGPW8k6LHcY2qqcfajKEso612VAFPjKPVXVIgjAtU0iNWKOCJSnxC1T5XIAhtPlvlkQKeOUbV
+        VhcNbFDdaAuYV8AzC2j1OxXIZwgtYUoBz0yj1R9UIB93AZMKeEZ/KnIBeqVaQjEegXa/1e9QIB+99Szh
+        UAHPxG5CcYZKekYfTchQM3pD1dY8EUqxGpHeolY3shEVoxVXY+JWLNbRVruvQEYO0OqtKRCHz9fxLFod
+        TUeJR7SSDiRGSUcyI+lQqp3tfSg10o7lm5h5LHeJ+zD5Rh1TL/H6YRKE+2km9VuxMgWSy/0B9ZvGTXB3
+        jmQAAAAASUVORK5CYII=
+</value>
   </data>
-  <data name="mano1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\mano.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="triangulo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\triangulo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cuadraro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\cuadraro.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="puntero" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\puntero.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="triangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\triangulo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="circulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\circulo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rombo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\rombo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="circulo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\circulo.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rgb1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\iconos\rgb.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="btnTri.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFzSURBVFhH7Za9K4VhGIePj3yUFNmUxWCxMrArioGVgZ34
+        A3z8BWxMrCSTxWYxWSwGZSGLmKQk5ev65f3pdDje97xflveqq55zP/f9e85Tp85TKihIyASOfy3zpxNv
+        AztUyJsd/AjcViFPRtCHy/eglguteIk+WGqtmvYyZwN9803cKvu8jpkyjG+ow26wPVBr1bQ3hJnQghfo
+        246h0dp19TRj6qyhD9lVoYI99P6qCmnSjy+o8DvswkpUu0f1qFczqdCAp+jbTWM1ZtB9mtFsYpbQoYcq
+        hHCE7l9UIQm9+IQKe8QeDEM96tWMZpURizo8Rt9mHqOygJ5ThrJqZg4dcoL1GBX1asbzs1gT3fiAGn7G
+        PqwVzWhWGcpSZmT0Y/O3X1YhJivonAMVojCFHjrDRoxLE56j8ybxT/zIUPMrDmBSBlFZygx9vJQ/MtL8
+        Z1OWc6s+XiofGVn64/HShtf4W3MWXqHO/GYU93NWZxYU/Del0iehQbfoaSX6xgAAAABJRU5ErkJggg==
+</value>
   </data>
 </root>

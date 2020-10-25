@@ -10,6 +10,10 @@ namespace Mod_Paint
         public Point puntoFinal { get; set; }
         Color color;
 
+        public Circulo()
+        {
+
+        }
 
         public Circulo(Point inicial, Point final, Color color)
         {
@@ -23,7 +27,7 @@ namespace Mod_Paint
         {
             Rectangle r = new Rectangle(inicial, new Size(final.X - inicial.X, final.X - inicial.X));
             g.SmoothingMode = SmoothingMode.AntiAlias;
-            g.DrawEllipse(new Pen(color), r);
+            g.DrawEllipse(new Pen(color,2), r);
             g.Dispose();
         }
 
